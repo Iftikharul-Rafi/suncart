@@ -1,0 +1,18 @@
+@import 'animate.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6D94C5;     /* নীল রাখতে চাইলে এটা রাখো, না চাইলে ধূসর বা কালো দিতে পারো */
+  --primary-dark: #5a7fb0;
+  --bg-main: #FFFFFF;     /* সাদা ব্যাকগ্রাউন্ড */
+  --bg-soft: #F9FAFB;     /* খুব হালকা ধূসর (কার্ডের জন্য) */
+  --text-main: #111827;   /* গাঢ় ধূসর প্রায় কালো */
+  --text-light: #6B7280;  /* মাঝারি ধূসর */
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-main);
+}
