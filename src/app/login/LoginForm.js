@@ -41,7 +41,6 @@ export default function LoginForm() {
 
       <h1 className="text-3xl font-bold text-center mb-6">Login</h1>
 
-      
       <form onSubmit={handleSubmit} className="space-y-4">
 
         <input
@@ -70,14 +69,12 @@ export default function LoginForm() {
         </button>
       </form>
 
-      
       <div className="flex items-center gap-2 my-4">
         <div className="flex-1 h-px bg-gray-600"></div>
         <span className="text-sm text-gray-400">OR</span>
         <div className="flex-1 h-px bg-gray-600"></div>
       </div>
 
-      
       <button
         onClick={handleGoogleSignIn}
         className="w-full py-2 border border-gray-500 rounded-md hover:bg-gray-700 transition"
@@ -85,7 +82,6 @@ export default function LoginForm() {
         Sign in with Google
       </button>
 
-      
       <p className="text-center mt-4 text-gray-300">
         New user?{" "}
         <Link href="/register" className="text-[#6D94C5] hover:underline">
