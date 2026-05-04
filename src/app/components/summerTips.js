@@ -46,7 +46,7 @@ export default function summerTips() {
 
   return (
     <section className="my-20 max-w-7xl mx-auto px-4">
-      {/* Main Heading */}
+     
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           SUMMER SKINCARE TIPS <span className="text-[#6D94C5]">BY SKIN TYPE</span>
@@ -54,7 +54,7 @@ export default function summerTips() {
         <div className="w-24 h-1 bg-[#6D94C5] mx-auto mt-4 rounded-full"></div>
       </div>
 
-      {/* 4 Column Responsive Grid */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
         {tipsData.map((item, idx) => (
           <div
@@ -76,7 +76,7 @@ export default function summerTips() {
         ))}
       </div>
 
-      {/* Optional Extra Note (like "Aloe vera gel soothes sunburn" etc) */}
+     
       <div className="mt-10 text-center text-2xl text-gray-500 bg-white/50 rounded-full py-2 px-4 w-max mx-auto backdrop-blur-sm">
          Don't forget to reapply SPF every 2 hours when outdoors!
       </div>

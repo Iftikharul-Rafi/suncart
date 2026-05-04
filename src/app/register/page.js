@@ -14,7 +14,7 @@ export default function RegisterPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Simulate registration
+    
     toast.success("Registration successful! Please login.");
     router.push("/login");
   };

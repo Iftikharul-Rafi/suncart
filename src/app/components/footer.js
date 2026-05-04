@@ -7,10 +7,10 @@ export default function footer() {
   return (
     <footer className="bg-white border-t border-gray-200 pt-12 pb-6 mt-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Main Footer Grid – ডেস্কটপে ৬ কলাম, মোবাইলে ১ */}
+        
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
           
-          {/* Column 1 – Brand Logo (বড়) + Contact Info */}
+          
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <span className="text-4xl">☀️</span>
@@ -21,7 +21,7 @@ export default function footer() {
             <p className="text-sm text-gray-600 leading-relaxed">
               Summer Essentials Store – your one-stop shop for sunglasses, outfits, skincare & beach accessories.
             </p>
-            {/* Contact Info (মোবাইল ফোন, ইমেইল, ঠিকানা) */}
+            
             <div className="text-sm text-gray-600 space-y-1">
               <p className="flex items-center gap-2">📍 Gulshan, Dhaka, Bangladesh</p>
               <p className="flex items-center gap-2">📞 09642 922 922</p>
@@ -29,7 +29,7 @@ export default function footer() {
             </div>
           </div>
 
-          {/* Column 2 – Information */}
+          
           <div>
             <h4 className="font-semibold text-gray-800 mb-3">Information</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -43,7 +43,7 @@ export default function footer() {
             </ul>
           </div>
 
-          {/* Column 3 – Shop By */}
+          
           <div>
             <h4 className="font-semibold text-gray-800 mb-3">Shop By</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -57,7 +57,7 @@ export default function footer() {
             </ul>
           </div>
 
-          {/* Column 4 – Support */}
+          
           <div>
             <h4 className="font-semibold text-gray-800 mb-3">Support</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -70,7 +70,7 @@ export default function footer() {
             </ul>
           </div>
 
-          {/* Column 5 – Consumer Policy */}
+          
           <div>
             <h4 className="font-semibold text-gray-800 mb-3">Consumer Policy</h4>
             <ul className="space-y-2 text-sm text-gray-600">
@@ -83,7 +83,7 @@ export default function footer() {
             </ul>
           </div>
 
-          {/* Column 6 – Social Links (ডান পাশে) */}
+          
           <div>
             <h4 className="font-semibold text-gray-800 mb-3">Follow Us</h4>
             <div className="flex space-x-4">
@@ -124,7 +124,7 @@ export default function footer() {
                 <FaYoutube size={18} />
               </a>
             </div>
-            {/* Privacy policy লিংকটি এখানে পুনরায় যোগ করা হল (প্রথম কলামেও আছে) */}
+            
             <div className="mt-4">
               <Link href="/privacy" className="text-xs text-gray-500 hover:text-[#6D94C5] transition">
                 Privacy Policy
@@ -133,7 +133,7 @@ export default function footer() {
           </div>
         </div>
 
-        {/* Copyright Bar */}
+        
         <div className="border-t border-gray-200 mt-10 pt-6 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} SunCart — All rights reserved. Designed for summer vibes.
         </div>

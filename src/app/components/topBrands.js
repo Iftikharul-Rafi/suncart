@@ -36,7 +36,7 @@ const brands = [
 export default function TopBrands() {
   return (
     <section className="my-20 max-w-7xl mx-auto px-4">
-      {/* হেডিং সেকশন */}
+      
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
           TOP <span className="text-[#6D94C5]">BRANDS</span>
@@ -45,19 +45,19 @@ export default function TopBrands() {
         <p className="text-gray-500 mt-3 text-sm">Trusted by thousands</p>
       </div>
 
-      {/* ৪টি কার্ড – গ্রিড লেআউট */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         {brands.map((brand, idx) => (
           <div
             key={idx}
             className="group bg-white rounded-2xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100"
           >
-            {/* উপরে গ্রেডিয়েন্ট স্ট্রিপ – ব্র্যান্ডের রঙ অনুযায়ী */}
+            
             <div className={`h-2 bg-gradient-to-r ${brand.color} w-full`}></div>
 
-            {/* কার্ডের কন্টেন্ট */}
+            
             <div className="p-6 text-center">
-              {/* ব্র্যান্ড ইমেজ – বৃত্তাকার ফ্রেমে */}
+              
               <div className="w-24 h-24 mx-auto mb-4 rounded-full bg-gray-50 p-2 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform duration-300">
                 <Image
                   src={brand.image}
@@ -68,15 +68,15 @@ export default function TopBrands() {
                 />
               </div>
 
-              {/* ব্র্যান্ডের নাম */}
+              
               <h3 className="text-xl font-extrabold text-gray-800 tracking-wide">
                 {brand.name}
               </h3>
 
-              {/* ট্যাগলাইন */}
+              
               <p className="text-sm text-gray-500 mt-1">{brand.tagline}</p>
 
-              {/* শপ কালেকশন লিংক */}
+              
               <button className="mt-4 text-xs font-semibold text-[#6D94C5] hover:text-[#5a7fb0] transition flex items-center justify-center gap-1 group-hover:gap-2">
                 Shop Collection <span aria-hidden="true">→</span>
               </button>
@@ -85,7 +85,7 @@ export default function TopBrands() {
         ))}
       </div>
 
-      {/* নিচে আরও ব্র্যান্ডের ইঙ্গিত */}
+      
       <div className="mt-12 text-center text-xs text-gray-400">
         + many more premium brands
       </div>

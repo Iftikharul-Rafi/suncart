@@ -11,7 +11,7 @@ export default function Navbar() {
 
   return (
     <>
-      {/* Main Navbar */}
+      
       <nav className="fixed top-0 left-0 w-full bg-white shadow-md z-50 px-4 py-3 flex items-center justify-between flex-wrap">
         
         {/* Logo */}
@@ -22,7 +22,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Hamburger Icon (mobile only) */}
+        
         <button
           className="block md:hidden text-3xl text-gray-700 focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -30,7 +30,7 @@ export default function Navbar() {
           ☰
         </button>
 
-        {/* Desktop Menu */}
+        
         <div className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
           <Link href="/" className="hover:text-[#6D94C5]">Home</Link>
           <Link href="/products" className="hover:text-[#6D94C5]">Products</Link>
@@ -39,7 +39,7 @@ export default function Navbar() {
           )}
         </div>
 
-        {/* Desktop Auth */}
+        
         <div className="hidden md:flex items-center gap-3">
           {session ? (
             <>
@@ -70,7 +70,7 @@ export default function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile Menu (visible when menuOpen is true) */}
+      
       {menuOpen && (
         <div className="fixed top-[60px] left-0 w-full bg-white shadow-md z-40 md:hidden">
           <div className="flex flex-col p-4 space-y-3 text-gray-700">

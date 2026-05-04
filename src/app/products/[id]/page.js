@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default async function ProductDetails({ params }) {
-  // ✅ params handling (Next.js 15+ compatible)
+  
   const { id: rawId } = await params; 
   const id = Number(rawId);
 
@@ -18,14 +18,14 @@ export default async function ProductDetails({ params }) {
     );
   }
 
-  // ✅ session check
+  
   const session = await getServerSession(authOptions);
 
   if (!session) {
     redirect(`/login?callbackUrl=/products/${id}`);
   }
 
-  // ✅ product fetch
+ 
   const product = getProductById(id);
 
   if (!product) {
@@ -39,7 +39,7 @@ export default async function ProductDetails({ params }) {
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
 
-      {/* 🔙 Back Button */}
+      
       <Link
         href="/products"
         className="inline-block mb-6 px-4 py-2 border rounded-md hover:bg-gray-100 transition"
@@ -49,20 +49,20 @@ export default async function ProductDetails({ params }) {
 
       <div className="flex flex-col lg:flex-row gap-8 bg-white shadow-md rounded-xl p-6">
 
-        {/* 🖼 Image Section */}
+        
         <div className="lg:w-1/2 relative h-80 lg:h-96 bg-gray-100 rounded-lg overflow-hidden">
           <Image
             src={product.image || "/fallback.jpg"}
             alt={product.name || "Product Image"}
             fill
             className="object-contain p-4"
-            // ✅ sizes optimization
+            
             sizes="(max-width: 768px) 100vw, 50vw"
             priority
           />
         </div>
 
-        {/* 📦 Content Section */}
+        
         <div className="lg:w-1/2 flex flex-col justify-between">
 
           <div>
@@ -91,7 +91,7 @@ export default async function ProductDetails({ params }) {
             </p>
           </div>
 
-          {/* 🛒 Button */}
+          
           <button className="mt-6 w-full py-3 bg-[#6D94C5] text-white rounded-md hover:opacity-90 transition">
             Add to Cart (Demo)
           </button>

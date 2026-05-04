@@ -23,7 +23,7 @@ export default function UpdateProfilePage() {
     setLoading(true);
 
     try {
-      // NextAuth এর session আপডেট করার জন্য update method
+      
       const result = await updateSession({
         name: name,
         image: image,
@@ -46,7 +46,7 @@ export default function UpdateProfilePage() {
       </h1>
 
       <form onSubmit={handleSubmit} className="space-y-5">
-        {/* Name Input */}
+        
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Full Name
@@ -61,7 +61,7 @@ export default function UpdateProfilePage() {
           />
         </div>
 
-        {/* Image URL Input */}
+        
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-1">
             Profile Image URL
@@ -84,7 +84,7 @@ export default function UpdateProfilePage() {
           )}
         </div>
 
-        {/* Update Button */}
+        
         <button
           type="submit"
           disabled={loading}

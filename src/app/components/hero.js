@@ -23,10 +23,10 @@ export default function Hero() {
   return (
     <section className="w-full relative overflow-hidden">
       
-      {/* ❗ height responsive */}
+      
       <div className="w-full h-[70vh] md:h-[85vh] relative">
         
-        {/* Images */}
+        
         {images.map((img, index) => (
           <div
             key={index}
@@ -44,10 +44,10 @@ export default function Hero() {
           </div>
         ))}
 
-        {/* Overlay */}
+        
         <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
           <div className="text-center text-white px-4">
-            {/* Animate.css ক্লাস এখানে যোগ করা হলো */}
+            
             <h1 className="animate__animated animate__bounceIn text-3xl md:text-5xl font-bold mb-4">
               Summer Collection 2026
             </h1>
@@ -60,7 +60,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Dots */}
+        
         <div className="absolute bottom-6 w-full flex justify-center gap-3">
           {images.map((_, index) => (
             <div

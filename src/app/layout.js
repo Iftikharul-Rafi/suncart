@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <Navbar />
 
-          {/* মূল কন্টেন্ট: container + উপরে padding (pt-20 মোবাইলে, md:pt-24 ডেস্কটপে) */}
+          
           <main className="flex-grow container mx-auto px-4 py-6 pt-20 md:pt-24">
             {children}
           </main>
