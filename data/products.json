@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "/image/Sunglasses.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Floral Summer Dress",
+    "brand": "SummerVibe",
+    "price": 29.99,
+    "rating": 4.9,
+    "stock": 25,
+    "description": "Lightweight floral dress, breathable fabric, perfect for beach parties.",
+    "image": "/image/Dress.jpg",
+    "category": "Outfits"
+  },
+  {
+    "id": 3,
+    "name": "Cooling Aloe Vera Gel",
+    "brand": "SkinCarePro",
+    "price": 8.99,
+    "rating": 4.5,
+    "stock": 50,
+    "description": "Natural aloe vera gel for sunburn relief and hydration.",
+    "image": "/image/Gel.jpg",
+    "category": "Skincare"
+  },
+  {
+    "id": 4,
+    "name": "Beach Towel – Extra Large",
+    "brand": "BeachBum",
+    "price": 19.99,
+    "rating": 4.6,
+    "stock": 30,
+    "description": "Soft, quick-dry beach towel with summer pattern.",
+    "image": "/image/Towel.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 5,
+    "name": "Straw Beach Hat",
+    "brand": "SunShade",
+    "price": 12.5,
+    "rating": 4.8,
+    "stock": 15,
+    "description": "Wide brim straw hat for full sun protection.",
+    "image": "/image/Hat.jpg",
+    "category": "Accessories"
+  },
+  {
+    "id": 6,
+    "name": "Sunscreen SPF 50+",
+    "brand": "SkinCarePro",
+    "price": 14.99,
+    "rating": 4.9,
+    "stock": 40,
+    "description": "Water-resistant, broad-spectrum sunscreen, fragrance-free.",
+    "image": "/image/Sunscreen.jpg",
+    "category": "Skincare"
+  }
+]
